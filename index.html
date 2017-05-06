@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="rss_scripts.js"></script>
+</head>
+<body onload="getAll(); lastVisit()">
+  <div id="lastVisit" align="left">
+    You must be new to this site.  Greetings traveler!
+  </div>
+  <div id="form" align="right">
+    <img height="150" width="75" src="French_soldier_1700s.png">
+    <br>
+    <input type="text" id="username" placeholder="Username" required>
+    <br>
+    <input type="text" id="password" placeholder="Password" required>
+    <br>
+    <p id="form-error" style="color:red;"></p>
+    <br>
+    <button onclick="loginUser()">Enter Hither (Login/Register)
+    </button>
+  </div>
+  <center>
+    <h1>~Ye Olde Almanac~</h1>
+    <table>
+      <tr>
+        <th>
+          <a href="#" id="all" onclick="getAll()">All News</a>
+        </th>
+        <th>
+          <a href="#" id="us" onclick="getUS()">US Gov News</a>
+        </th>
+        <th>
+          <a href="#" id="world" onclick="getWorld()">World News</a>
+        </th>
+        <th>
+          <a href="#" id="sports" onclick="getSports()">Sports</a>
+        </th>
+        <th>
+          <a href="#" id="weather" onclick="getWeather()">Weather</a>
+        </th>
+        <th>
+          <a href="#" id="tech" onclick="getTech()">Technology</a>
+        </th>
+      </tr>
+    </table>
+  </center>
+  <br>
+  <div id="rss">
+  </div>
+  
+</body>
+
+</html>
